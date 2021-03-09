@@ -1,0 +1,14 @@
+maior = 0
+menor = 0
+for pess in range(1, 6):
+    peso = float(input('Informe o peso da {}ª pessoa: '.format(pess)))
+    if pess == 1: # primeiro peso informado
+        maior = peso # por só ter um valor informado até o momento,
+        menor = peso # ele será o maior e o menor pq não tem outro para comparação
+    else:
+        if peso > maior:
+            maior = peso
+        if peso < menor:
+            menor = peso
+print('O maior peso informado foi de {} kg.'.format(maior))
+print('O menor peso lido foi o de {} kg.'. format(menor))
