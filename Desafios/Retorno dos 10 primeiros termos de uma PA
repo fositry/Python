@@ -1,0 +1,9 @@
+print('='*35)
+print('DEZ PRIMEIROS TERMOS DE UMA P.A.')
+print('='*35)
+termo = int(input('Primeiro termo: '))
+razao = int(input('Razão da P.A.: '))
+decimo = termo + (11 - 1) * razao
+for p in range(termo, decimo, razao):
+    print('{}'.format(p), end=' - ')
+print('FIM')
