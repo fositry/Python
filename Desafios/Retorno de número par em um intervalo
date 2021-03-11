@@ -1,0 +1,10 @@
+for c in range(2, 51, 2):
+    print('.', end='')
+    print(c, end=' ')
+print('Fim!')
+
+for n in range(2, 51): # esse é menos eficiente pq repete os laços
+    print('.', end='') # mais vezes que o primeiro, ocupando mais espaço.
+    if n % 2 == 0:
+        print(n, end=' ')
+print('Fim!')
