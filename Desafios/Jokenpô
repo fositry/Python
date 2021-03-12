@@ -1,0 +1,40 @@
+from time import sleep
+from random import randint
+itens = ('Pedra', 'Papel', 'Tesoura')
+print('{:@^85}'.format(' \033[1;33mJOQUENPÔ\033[m '))
+print('''Suas opções:
+ 0 - \033[1;31mPedra\033[m
+ 1 - \033[1;34mPapel\033[m
+ 2 - \033[1;32mTesoura\033[m''')
+op = int(input('Qual a sua jogada: '))
+n = randint(0, 2)
+print('\033[1;33mJO\033[m')
+sleep(1)
+print('\033[1;33mKEN\033[m')
+sleep(1)
+print('\033[1;33mPÔ!!!\033[m')
+sleep(1)
+print('*' * 40)
+print('Eu joguei {} e você jogou {}.'.format(itens[n], itens[op]))
+print('*' * 40)
+if n == 0:
+    if op == 0:
+        print('Empatamos! Tente novamente!')
+    elif op == 1:
+        print('Você venceu!')
+    elif op == 2:
+        print('Você perdeu!')
+elif n == 1:
+    if op == 0:
+        print('Você perdeu!')
+    elif op == 1:
+        print('Empatamos! Tente novamente!')
+    elif op == 2:
+        print('Você ganhou!')
+elif n == 2:
+    if op == 0:
+        print('Você ganhou!')
+    elif op == 1:
+        print('Você perdeu!')
+    elif op == 2:
+        print('Empatamos! Tente novamente!')
