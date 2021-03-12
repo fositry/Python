@@ -1,0 +1,13 @@
+r1 = float(input('Informe o valor da \033[1;31mprimeiro segmento\033[m: '))
+r2 = float(input('Informe o valor da \033[1;34msegundo segmento\033[m: '))
+r3 = float(input('Informe o valor da \033[1;32mterceiro segmento\033[m: '))
+if r3 < r1 + r2 and r2 < r1 + r3 and r1 < r2 + r3:
+    print('Os valores informados podem formar um triângulo', end=' ')
+    if r1 == r2 == r3:
+        print('\033[1;33mEQUILÁTERO\033[m.')
+    elif r1 == r2 or r1 == r3 or r2 == r3:
+        print('\033[1;33mISÓSCELES\033[m.')
+    elif r1 != r2 != r3 != r1:
+        print('\033[1;33mESCALENO\033[m.')
+else:
+    print('Os valores informados não podem formar um triângulo.')
