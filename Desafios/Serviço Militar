@@ -1,0 +1,20 @@
+from datetime import date
+nas = int(input('Informe o ano de nascimento: '))
+sexo = str(input('Informe seu sexo: '))
+atual = date.today().year
+idade = date.today().year - nas
+print('Quem nasceu em {} tem {} anos em {}.'.format(nas, idade, atual))
+if idade < 18 and sexo == 'masculino':
+    saldo = 18 - idade
+    ano = atual + saldo
+    print('Faltam {} anos para vc se alistar.'.format(saldo))
+    print('Seu alistamento será no ano de {}.'.format(ano))
+elif idade == 18 and sexo == 'masculino':
+    print('Você precisa se alistar esse ano.')
+elif idade > 18 and sexo == 'masculino':
+    saldo = idade - 18
+    ano = atual - saldo
+    print('Você deveria ter se alistado há {} anos.'.format(saldo))
+    print('Seu alistamento deveria ter sido em {}.'.format(ano))
+else:
+    print('Mas você, por ser mulher, não precisa se alistar.')
