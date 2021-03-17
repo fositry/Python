@@ -1,0 +1,8 @@
+val = float(input('Informe o valor do imóvel: R$ '))
+sal = float(input('Informe o salário: R$ '))
+anos = int(input('Informe em anos o tempo para pagamento: '))
+pt = val / (anos * 12)
+if pt <= sal * 30 / 100:
+    print('A prestação do imóvel será de \033[1;31mR${:.2f}\033[m mensais.'.format(pt))
+else:
+    print('A prestação excede 30% do salário. \033[1;31mEmpréstimo negado\033[m.')
