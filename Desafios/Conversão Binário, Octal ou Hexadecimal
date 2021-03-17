@@ -1,0 +1,12 @@
+num = int(input('Digite um número inteiro: '))
+print('''Escolha uma das bases para conversão: 
+1 - Binária;\n2 - Octal; \n3 - Hexadecimal.''')
+conv = int(input('Informe o número correspondente à base decimal escolhida: '))
+if conv == 1:
+    print('O número {} informado equivale a {} na base binária.'.format(num, bin(num)[2:]))
+elif conv == 2:
+    print('O número {} informado equivale a {} na base octal.'.format(num, oct(num)[2:]))
+elif conv == 3:
+    print('O número {} informado equivale a {} na base hexadecimal.'.format(num, hex(num)[2:]))
+else:
+    print('Opção inválida. Tente novamente!')
