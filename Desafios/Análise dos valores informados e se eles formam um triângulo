@@ -1,0 +1,7 @@
+r1 = float(input('Informe o comprimento da primeira reta: '))
+r2 = float(input('Informe o comprimento da segunda reta: '))
+r3 = float(input('Informe o comprimento da terceira reta: '))
+if r3 < r1 + r2 and r2 < r1 + r3 and r1 < r2 + r3:
+    print('Os valores informados podem formar um triângulo.')
+else:
+    print('Os valores informados não podem formar um triângulo.')
