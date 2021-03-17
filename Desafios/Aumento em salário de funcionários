@@ -1,0 +1,7 @@
+sal = float(input('Informe o salário: '))
+if sal >= 1200:
+    sal1 = sal + (sal * 10 / 100)
+    print('O salário de R${} informado terá aumento de 10%. O novo valor é de R${}.'.format(sal, sal1))
+else:
+    sal1 = sal + (sal * 15 / 100)
+    print('O salário de R${} informado terá aumento de 15%. O novo valor é de R${}.'.format(sal, sal1))
