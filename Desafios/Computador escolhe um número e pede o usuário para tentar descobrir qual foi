@@ -1,0 +1,13 @@
+from random import randint
+from time import sleep
+print('-=-'*30)
+print('Vou pensar em um número de 0 a 5. Tente adivinhar... ')
+print('-=-'*30)
+n = randint(0, 5)
+num = int(input('Em que número eu pensei? '))
+print('PROCESSANDO...')
+sleep(3)
+if num == n:
+    print('Número correto! Você venceu! Pensei no número {}. :)'.format(n))
+else:
+    print('Número errado. Você Perdeu. Pensei no número {} e não no {}. :('.format(n, num))
