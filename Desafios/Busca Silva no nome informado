@@ -1,0 +1,9 @@
+nome = str(input('Digite o nome: ')).strip().upper().split()
+print('Há a palavra Silva no nome? ')
+print('SILVA' in nome)
+
+nome = str(input('Digite o nome: ')).strip().lower().split()
+print('Seu nome tem Silva? {}.'.format('silva' in nome))
+
+# a inclusão de .split impediu de que nomes como 
+# 'Silvana' dessem um falso positivo.
