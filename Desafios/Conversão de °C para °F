@@ -1,0 +1,11 @@
+cores = {'fim': '\033[m',
+'amarelo': '\033[1;33;40m',
+'verde': '\033[1;31;42m',
+'azul': '\033[1;30;46m',
+'lilás': '\033[1;35;43m'
+}
+c = float(input('Informe a temperatura em °C: '))
+f = float(input('Informe a temperatura em °F: '))
+print('As temperaturas {}{:.1f}°C{} e {}{:.1f}°F{} informadas'.format(cores['amarelo'], c, cores['fim'], cores['azul'], f, cores['fim']), end=' ')
+print('equivalem a {}{:.1f}°F{}'.format(cores['verde'], c * 1.8 + 32, cores['fim']), end=' ')
+print('e {}{:.1f}{}°C respectivamente.'.format(cores['lilás'], (f - 32) / 1.8, cores['fim']))
