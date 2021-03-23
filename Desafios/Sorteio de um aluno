@@ -1,0 +1,9 @@
+from random import choice
+n1 = input('\033[1;33mPrimeiro aluno:\033[m ')
+n2 = input('\033[1;31mSegundo aluno:\033[m ')
+n3 = input('\033[1;36mTerceiro aluno:\033[m ')
+n4 = input('\033[1;32mQuarto aluno:\033[m ')
+lista = [n1, n2, n3, n4]
+es = choice(lista)
+print('\033[1;35mO aluno escolhido foi:\033[m')
+print(es)
