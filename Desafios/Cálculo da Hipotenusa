@@ -1,0 +1,6 @@
+from math import hypot
+cores = {'fim': '\033[m',
+         'vm': '\033[4;30;41m'}
+o = float(input('\033[1;35mInforme o comprimento do cateto oposto:\033[m '))
+a = float(input('\033[1;32mInforme o comprimento do cateto adjacente:\033[m '))
+print('O valor da hipotenusa é: {}{:.2f}{}.'.format(cores['vm'], hypot(o, a), cores['fim']))
