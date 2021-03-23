@@ -1,0 +1,5 @@
+cores = {'fim': '\033[m',
+         'az': '\033[4;30;46m',
+         'am': '\033[4;30;43m'}
+num = float(input('\033[1;31mDigite um número:\033[m '))
+print('O número {}{}{} digitado tem a parte inteira {}{}{}.'.format(cores['az'], num, cores['fim'], cores['am'], int(num), cores['fim']))
