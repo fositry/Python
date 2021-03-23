@@ -1,0 +1,6 @@
+cores = {'fim': '\033[m',
+         'vm': '\033[4;30;41m'}
+km = float(input('\033[1;33mInforme em km a distância percorrida:\033[m '))
+d = int(input('\033[1;36mInforme a quantidade de dias de aluguel:\033[m '))
+p = km * 0.15 + d * 60
+print('O preço a pagar pelo veículo alugado é de {}R${:.2f}{}.'.format(cores['vm'], p, cores['fim']))
