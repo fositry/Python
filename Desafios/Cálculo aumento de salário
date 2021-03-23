@@ -1,0 +1,2 @@
+sal = float(input('\033[1;36mInforme o salário:\033[m R$ '))
+print('O salário de \033[1;33mR${:.2f}\033[m com o aumento de 15% passará a ser \033[1;35mR${:.2f}\033[m.'.format(sal, sal + (sal * 15 / 100)))
