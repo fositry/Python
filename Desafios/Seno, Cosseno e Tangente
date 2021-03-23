@@ -1,0 +1,10 @@
+cores = {'fim': '\033[m',
+         'am': '\033[4;33;40m',
+         'vm': '\033[4;31;40m',
+         'az': '\033[4;34;40m',
+         'vd': '\033[4;32;40m'}
+from math import sin, cos, tan, radians
+a = float(input('\033[1;35mDigite o valor do ângulo:\033[m '))
+print('O ângulo de {}{:.0f}°{} informado tem:'.format(cores['am'], a, cores['fim']))
+print('Valor do seno: {}{:.2f}{};\nValor do cosseno: {}{:.2f}{};'.format(cores['vm'], sin(radians(a)), cores['fim'], cores['az'], cos(radians(a)), cores['fim']))
+print('Valor da tangente: {}{:.2f}{}.'.format(cores['vd'], tan(radians(a)), cores['fim']))
