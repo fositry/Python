@@ -1,0 +1,9 @@
+preço = float(input('\033[1;33mInforme o preço do produto:\033[m R$ '))
+desconto = preço * 5 / 100
+print('Com o desconto de 5% o produto deixa de custar \033[4;35mR${:.2f}\033[m'.format(preço), end=' ')
+print('e sai por \033[4;31mR${:.2f}\033[m.'.format(preço - desconto))
+
+preço = float(input('\033[1;36mInforme o preço do produto:\033[m R$ '))
+novo = preço - (preço * 5 / 100)
+print('Com o desconto de 5% o produto deixa de custar \033[4;35mR${:.2f}\033[m'.format(preço), end=' ')
+print('e sai por \033[4;31mR${:.2f}\033[m.'.format(novo))
