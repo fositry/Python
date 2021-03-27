@@ -1,0 +1,22 @@
+cores = {'limpa': '\033[m',
+         'pto': '\033[1;30m',
+         'vm': '\033[1;31m',
+         'vd': '\033[1;32m',
+         'am': '\033[1;33m',
+         'az': '\033[1;34m',
+         'ls': '\033[1;35m',
+         'azc': '\033[1;36m',
+         'cz': '\033[1;37m'}
+n = int(input('Digite um número para ver sua tabuada: '))
+print('-'*15)
+print('{} x {:2} = {}{}{}'.format(n, 1, cores['pto'], n*1, cores['limpa']))
+print('{} x {:2} = {}{}{}'.format(n, 2, cores['vm'], n*2, cores['limpa']))
+print('{} x {:2} = {}{}{}'.format(n, 3, cores['vd'], n*3, cores['limpa']))
+print('{} x {:2} = {}{}{}'.format(n, 4, cores['am'], n*4, cores['limpa']))
+print('{} x {:2} = {}{}{}'.format(n, 5, cores['az'], n*5, cores['limpa']))
+print('{} x {:2} = {}{}{}'.format(n, 6, cores['ls'], n*6, cores['limpa']))
+print('{} x {:2} = {}{}{}'.format(n, 7, cores['azc'], n*7, cores['limpa']))
+print('{} x {:2} = {}{}{}'.format(n, 8, cores['cz'], n*8, cores['limpa']))
+print('{} x {:2} = {}{}{}'.format(n, 9, cores['pto'], n*9, cores['limpa']))
+print('{} x {:2} = {}{}{}'.format(n, 10, cores['vm'], n*10, cores['limpa']))
+print('-'*15)
