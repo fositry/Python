@@ -1,0 +1,3 @@
+dinheiro = float(input('Informe o valor em reais: R$ '))
+conversao = dinheiro / 5.76
+print('O valor de \033[1;32;41mR${:.2f}\033[m informado, compra \033[1;30;45m{:.2f}U$\033[m.'.format(dinheiro, conversao))
