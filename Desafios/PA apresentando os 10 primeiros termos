@@ -1,0 +1,13 @@
+print('=' * 27)
+print('DEZ PRIMEIROS TERMOS DA PA')
+print('=' * 27)
+primeiro = int(input('Digite o primeiro termo da PA: '))
+razao = int(input('Digite a razão da PA: '))
+termo = primeiro
+contador = 1 # recebeu o número 1 para retornar 10 termos, se recebesse 0
+# retornaria 11 termos.
+while contador <= 10:
+    print('{} -> '.format(termo), end='')
+    termo += razao
+    contador += 1
+print('Fim')
