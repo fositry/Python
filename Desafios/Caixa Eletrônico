@@ -1,0 +1,20 @@
+valor = int(input('Informe o valor a ser sacado: R$ '))
+total = valor
+cedula = 50
+totced = 0
+while True:
+    if total >= cedula: # Essa parte faz contagem da quantidade de cédulas de 50
+        total -= cedula # que serão fornecidas com base no valor solicitado.
+        totced += 1 # o valor restante que não completar 50, precisa da análise das outras cédulas
+    else:
+        if totced > 0:
+            print(f'Total de {totced} cédulas de R${cedula:.2f}.')
+        if cedula == 50: # se a cedula sendo 50 não zerou o valor solicitado
+            cedula = 20 # então um valor de cedula menor passa a ocupar a variável
+        elif cedula == 20:
+            cedula = 10
+        elif cedula == 10:
+            cedula = 1
+        totced = 0
+        if total == 0:
+            break
